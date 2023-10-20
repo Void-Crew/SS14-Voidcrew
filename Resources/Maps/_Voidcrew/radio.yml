@@ -1,0 +1,484 @@
+meta:
+  format: 5
+  postmapinit: false
+tilemap:
+  0: Space
+  1: Plating
+  2: FloorArcadeRed
+  3: FloorFreezer
+  4: FloorArcadeBlue
+entities:
+- proto: ''
+  entities:
+  - uid: 1
+    components:
+    - type: MetaData
+    - pos: 0,0
+      parent: invalid
+      type: Transform
+    - chunks:
+        -1,-1:
+          ind: -1,-1
+          tiles: AAAAAAAAAAABAAAAAQAAAAEAAAACAAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAMAAAACAAAAAgAAAAIAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAMAAAADAAAAAgAAAAIAAAACAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAMAAAADAAAAAwAAAAIAAAACAAAAAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAADAAAAAwAAAAMAAAAEAAAABAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAIAAAACAAAAAgAAAAQAAAACAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAACAAAAAgAAAAIAAAACAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAIAAAACAAAABAAAAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAEAAAABAAAAAQAAAAEAAAABAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAABAAAAAQAAAAEAAAABAAAAAQAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABAAAABAAAAAQAAAAEAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+      type: MapGrid
+    - id: radio_Voidcrew
+      type: BecomesStation
+- proto: WallShuttle
+  entities:
+  - uid: 2
+    components:
+    - pos: -14,-16
+      parent: 1
+      type: Transform
+  - uid: 3
+    components:
+    - pos: -12,-16
+      parent: 1
+      type: Transform
+  - uid: 6
+    components:
+    - pos: -10,-16
+      parent: 1
+      type: Transform
+  - uid: 7
+    components:
+    - pos: -8,-16
+      parent: 1
+      type: Transform
+  - uid: 8
+    components:
+    - pos: -15,-15
+      parent: 1
+      type: Transform
+  - uid: 9
+    components:
+    - pos: -14,-15
+      parent: 1
+      type: Transform
+  - uid: 16
+    components:
+    - pos: -8,-15
+      parent: 1
+      type: Transform
+  - uid: 17
+    components:
+    - pos: -7,-15
+      parent: 1
+      type: Transform
+  - uid: 18
+    components:
+    - pos: -16,-14
+      parent: 1
+      type: Transform
+  - uid: 19
+    components:
+    - pos: -15,-14
+      parent: 1
+      type: Transform
+  - uid: 29
+    components:
+    - pos: -7,-14
+      parent: 1
+      type: Transform
+  - uid: 30
+    components:
+    - pos: -6,-14
+      parent: 1
+      type: Transform
+  - uid: 45
+    components:
+    - pos: -16,-10
+      parent: 1
+      type: Transform
+  - uid: 46
+    components:
+    - pos: -15,-10
+      parent: 1
+      type: Transform
+  - uid: 48
+    components:
+    - pos: -7,-10
+      parent: 1
+      type: Transform
+  - uid: 49
+    components:
+    - pos: -6,-10
+      parent: 1
+      type: Transform
+  - uid: 56
+    components:
+    - pos: -15,-8
+      parent: 1
+      type: Transform
+  - uid: 57
+    components:
+    - pos: -14,-8
+      parent: 1
+      type: Transform
+  - uid: 59
+    components:
+    - pos: -8,-8
+      parent: 1
+      type: Transform
+  - uid: 60
+    components:
+    - pos: -7,-8
+      parent: 1
+      type: Transform
+  - uid: 69
+    components:
+    - pos: -14,-5
+      parent: 1
+      type: Transform
+  - uid: 70
+    components:
+    - pos: -13,-5
+      parent: 1
+      type: Transform
+  - uid: 74
+    components:
+    - pos: -9,-5
+      parent: 1
+      type: Transform
+  - uid: 75
+    components:
+    - pos: -8,-5
+      parent: 1
+      type: Transform
+  - uid: 76
+    components:
+    - pos: -13,-4
+      parent: 1
+      type: Transform
+  - uid: 80
+    components:
+    - pos: -9,-4
+      parent: 1
+      type: Transform
+- proto: AirlockExternalGlass
+  entities:
+  - uid: 4
+    components:
+    - pos: -11,-16
+      parent: 1
+      type: Transform
+- proto: AtmosDeviceFanTiny
+  entities:
+  - uid: 5
+    components:
+    - pos: -11,-16
+      parent: 1
+      type: Transform
+- proto: WindowReinforcedDirectional
+  entities:
+  - uid: 10
+    components:
+    - pos: -13,-15
+      parent: 1
+      type: Transform
+  - uid: 15
+    components:
+    - pos: -9,-15
+      parent: 1
+      type: Transform
+- proto: VendingMachineTankDispenserEVA
+  entities:
+  - uid: 11
+    components:
+    - pos: -12,-15
+      parent: 1
+      type: Transform
+- proto: Poweredlight
+  entities:
+  - uid: 12
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -12,-15
+      parent: 1
+      type: Transform
+  - uid: 14
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -10,-15
+      parent: 1
+      type: Transform
+  - uid: 21
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -14,-14
+      parent: 1
+      type: Transform
+  - uid: 28
+    components:
+    - rot: -1.5707963267948966 rad
+      pos: -8,-14
+      parent: 1
+      type: Transform
+  - uid: 34
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -15,-13
+      parent: 1
+      type: Transform
+  - uid: 51
+    components:
+    - rot: 0 rad
+      pos: -14,-9
+      parent: 1
+      type: Transform
+  - uid: 54
+    components:
+    - rot: 0 rad
+      pos: -8,-9
+      parent: 1
+      type: Transform
+  - uid: 66
+    components:
+    - rot: 0 rad
+      pos: -13,-6
+      parent: 1
+      type: Transform
+  - uid: 67
+    components:
+    - rot: 0 rad
+      pos: -9,-6
+      parent: 1
+      type: Transform
+- proto: SuitStorageEVA
+  entities:
+  - uid: 13
+    components:
+    - pos: -10,-15
+      parent: 1
+      type: Transform
+- proto: HospitalCurtainsOpen
+  entities:
+  - uid: 20
+    components:
+    - pos: -14,-14
+      parent: 1
+      type: Transform
+- proto: DonkpocketBoxSpawner
+  entities:
+  - uid: 22
+    components:
+    - pos: -9,-14
+      parent: 1
+      type: Transform
+  - uid: 23
+    components:
+    - pos: -9,-14
+      parent: 1
+      type: Transform
+  - uid: 25
+    components:
+    - pos: -9,-14
+      parent: 1
+      type: Transform
+  - uid: 26
+    components:
+    - pos: -9,-14
+      parent: 1
+      type: Transform
+- proto: LockerFreezer
+  entities:
+  - uid: 24
+    components:
+    - pos: -8.5,-13.5
+      parent: 1
+      type: Transform
+- proto: KitchenMicrowave
+  entities:
+  - uid: 27
+    components:
+    - pos: -8,-14
+      parent: 1
+      type: Transform
+- proto: ShuttleWindow
+  entities:
+  - uid: 31
+    components:
+    - pos: -16,-13
+      parent: 1
+      type: Transform
+  - uid: 36
+    components:
+    - pos: -6,-13
+      parent: 1
+      type: Transform
+  - uid: 37
+    components:
+    - pos: -16,-12
+      parent: 1
+      type: Transform
+  - uid: 42
+    components:
+    - pos: -6,-12
+      parent: 1
+      type: Transform
+  - uid: 43
+    components:
+    - pos: -16,-11
+      parent: 1
+      type: Transform
+  - uid: 44
+    components:
+    - pos: -6,-11
+      parent: 1
+      type: Transform
+  - uid: 50
+    components:
+    - pos: -15,-9
+      parent: 1
+      type: Transform
+  - uid: 55
+    components:
+    - pos: -7,-9
+      parent: 1
+      type: Transform
+  - uid: 61
+    components:
+    - pos: -14,-7
+      parent: 1
+      type: Transform
+  - uid: 63
+    components:
+    - pos: -8,-7
+      parent: 1
+      type: Transform
+  - uid: 64
+    components:
+    - pos: -14,-6
+      parent: 1
+      type: Transform
+  - uid: 68
+    components:
+    - pos: -8,-6
+      parent: 1
+      type: Transform
+  - uid: 77
+    components:
+    - pos: -12,-4
+      parent: 1
+      type: Transform
+  - uid: 78
+    components:
+    - pos: -11,-4
+      parent: 1
+      type: Transform
+  - uid: 79
+    components:
+    - pos: -10,-4
+      parent: 1
+      type: Transform
+- proto: Sink
+  entities:
+  - uid: 32
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -15,-13
+      parent: 1
+      type: Transform
+- proto: Mirror
+  entities:
+  - uid: 33
+    components:
+    - pos: -15,-13
+      parent: 1
+      type: Transform
+- proto: Table
+  entities:
+  - uid: 35
+    components:
+    - pos: -13,-13
+      parent: 1
+      type: Transform
+  - uid: 40
+    components:
+    - pos: -13,-12
+      parent: 1
+      type: Transform
+- proto: ToiletEmpty
+  entities:
+  - uid: 38
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -15,-12
+      parent: 1
+      type: Transform
+- proto: Windoor
+  entities:
+  - uid: 39
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -14,-12
+      parent: 1
+      type: Transform
+  - uid: 41
+    components:
+    - rot: 3.141592653589793 rad
+      pos: -11,-12
+      parent: 1
+      type: Transform
+  - uid: 47
+    components:
+    - rot: 1.5707963267948966 rad
+      pos: -10,-10
+      parent: 1
+      type: Transform
+- proto: Bed
+  entities:
+  - uid: 52
+    components:
+    - pos: -13,-9
+      parent: 1
+      type: Transform
+- proto: BedsheetSyndie
+  entities:
+  - uid: 53
+    components:
+    - pos: -12.5,-8.5
+      parent: 1
+      type: Transform
+- proto: TelecomServerFilled
+  entities:
+  - uid: 58
+    components:
+    - pos: -9,-8
+      parent: 1
+      type: Transform
+- proto: ClothingBeltUtility
+  entities:
+  - uid: 62
+    components:
+    - pos: -12.5,-6.5
+      parent: 1
+      type: Transform
+- proto: MedkitAdvancedFilled
+  entities:
+  - uid: 65
+    components:
+    - pos: -12.5,-5.5
+      parent: 1
+      type: Transform
+- proto: ComputerShuttle
+  entities:
+  - uid: 71
+    components:
+    - pos: -11,-5
+      parent: 1
+      type: Transform
+- proto: ComputerIFF
+  entities:
+  - uid: 72
+    components:
+    - pos: -10,-5
+      parent: 1
+      type: Transform
+- proto: Gyroscope
+  entities:
+  - uid: 73
+    components:
+    - pos: -10,-5
+      parent: 1
+      type: Transform

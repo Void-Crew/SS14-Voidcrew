@@ -1,0 +1,14 @@
+- type: gameMap
+  id: high_Voidcrew
+  mapName: High-class Corporate Luxury Ship
+  mapPath: /Maps/_Voidcrew/high.yml
+  minPlayers: 0
+  stations:
+    high_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: High-class Corporate Luxury Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

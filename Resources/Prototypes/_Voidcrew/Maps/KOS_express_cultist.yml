@@ -1,0 +1,14 @@
+- type: gameMap
+  id: express_cultist_Voidcrew
+  mapName: KOS Express-Class Eldritch Hijacked Freighter
+  mapPath: /Maps/_Voidcrew/express_cultist.yml
+  minPlayers: 0
+  stations:
+    express_cultist_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: KOS Express-Class Eldritch Hijacked Freighter
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

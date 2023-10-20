@@ -1,0 +1,14 @@
+- type: gameMap
+  id: brilliant_Voidcrew
+  mapName: Brilliant-class remnant salvage
+  mapPath: /Maps/_Voidcrew/brilliant.yml
+  minPlayers: 0
+  stations:
+    brilliant_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Brilliant-class remnant salvage
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

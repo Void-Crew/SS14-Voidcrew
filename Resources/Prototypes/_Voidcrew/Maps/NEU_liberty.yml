@@ -1,0 +1,14 @@
+- type: gameMap
+  id: liberty_Voidcrew
+  mapName: Liberty-class Interceptor
+  mapPath: /Maps/_Voidcrew/liberty.yml
+  minPlayers: 0
+  stations:
+    liberty_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Liberty-class Interceptor
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

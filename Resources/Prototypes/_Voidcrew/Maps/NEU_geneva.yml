@@ -1,0 +1,14 @@
+- type: gameMap
+  id: syndicate_geneva_Voidcrew
+  mapName: Geneva-class Search and Rescue Vessel
+  mapPath: /Maps/_Voidcrew/syndicate_geneva.yml
+  minPlayers: 0
+  stations:
+    syndicate_geneva_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Geneva-class Search and Rescue Vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

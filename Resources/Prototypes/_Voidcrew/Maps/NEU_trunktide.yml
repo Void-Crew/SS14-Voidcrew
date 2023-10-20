@@ -1,0 +1,14 @@
+- type: gameMap
+  id: trunktide_Voidcrew
+  mapName: TrunkTide-class Salvage Ship
+  mapPath: /Maps/_Voidcrew/trunktide.yml
+  minPlayers: 0
+  stations:
+    trunktide_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: TrunkTide-class Salvage Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

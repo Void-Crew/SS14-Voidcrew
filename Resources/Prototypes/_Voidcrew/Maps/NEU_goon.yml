@@ -1,0 +1,14 @@
+- type: gameMap
+  id: goon_Voidcrew
+  mapName: Goon-class Repurposed Emergency Shuttle
+  mapPath: /Maps/_Voidcrew/goon.yml
+  minPlayers: 0
+  stations:
+    goon_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Goon-class Repurposed Emergency Shuttle
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

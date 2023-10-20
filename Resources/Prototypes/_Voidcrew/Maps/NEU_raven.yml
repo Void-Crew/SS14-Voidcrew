@@ -1,0 +1,14 @@
+- type: gameMap
+  id: raven_Voidcrew
+  mapName: Raven-class Heavy Transporter
+  mapPath: /Maps/_Voidcrew/raven.yml
+  minPlayers: 0
+  stations:
+    raven_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Raven-class Heavy Transporter
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

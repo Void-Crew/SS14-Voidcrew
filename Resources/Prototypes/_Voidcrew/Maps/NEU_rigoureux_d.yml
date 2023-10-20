@@ -1,0 +1,14 @@
+- type: gameMap
+  id: rigoureux_d_Voidcrew
+  mapName: Rigoureux(D)-class Auxiliary Cutter
+  mapPath: /Maps/_Voidcrew/rigoureux_d.yml
+  minPlayers: 0
+  stations:
+    rigoureux_d_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Rigoureux(D)-class Auxiliary Cutter
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

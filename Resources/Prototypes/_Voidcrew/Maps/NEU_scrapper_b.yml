@@ -1,0 +1,14 @@
+- type: gameMap
+  id: scrapper_b_Voidcrew
+  mapName: Scrapper-B Exploration Vessel
+  mapPath: /Maps/_Voidcrew/scrapper_b.yml
+  minPlayers: 0
+  stations:
+    scrapper_b_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Scrapper-B Exploration Vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

@@ -1,0 +1,14 @@
+- type: gameMap
+  id: mechaton_Voidcrew
+  mapName: Mechaton-class Robotics Production Facility
+  mapPath: /Maps/_Voidcrew/mechaton.yml
+  minPlayers: 0
+  stations:
+    mechaton_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Mechaton-class Robotics Production Facility
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

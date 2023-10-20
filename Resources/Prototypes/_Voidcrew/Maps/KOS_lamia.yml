@@ -1,0 +1,14 @@
+- type: gameMap
+  id: lamia_Voidcrew
+  mapName: Lamia-class Magery Ship
+  mapPath: /Maps/_Voidcrew/lamia.yml
+  minPlayers: 0
+  stations:
+    lamia_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Lamia-class Magery Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

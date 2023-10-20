@@ -1,0 +1,14 @@
+- type: gameMap
+  id: irish_Voidcrew
+  mapName: Resistance-Class IRA Safehouse
+  mapPath: /Maps/_Voidcrew/irish.yml
+  minPlayers: 0
+  stations:
+    irish_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Resistance-Class IRA Safehouse
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

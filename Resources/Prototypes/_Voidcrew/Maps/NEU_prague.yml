@@ -1,0 +1,14 @@
+- type: gameMap
+  id: prague_Voidcrew
+  mapName: Prague-Class Independent Research Vessel
+  mapPath: /Maps/_Voidcrew/prague.yml
+  minPlayers: 0
+  stations:
+    prague_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Prague-Class Independent Research Vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

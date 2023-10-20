@@ -1,0 +1,14 @@
+- type: gameMap
+  id: afflictor_Voidcrew
+  mapName: Afflictor-Class Phase Frigate
+  mapPath: /Maps/_Voidcrew/afflictor.yml
+  minPlayers: 0
+  stations:
+    afflictor_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Afflictor-Class Phase Frigate
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

@@ -1,0 +1,14 @@
+- type: gameMap
+  id: cricket_Voidcrew
+  mapName: Cricket-Class Solgov Intel Scout
+  mapPath: /Maps/_Voidcrew/cricket.yml
+  minPlayers: 0
+  stations:
+    cricket_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Cricket-Class Solgov Intel Scout
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

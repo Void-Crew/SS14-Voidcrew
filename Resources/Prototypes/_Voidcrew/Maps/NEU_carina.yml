@@ -1,0 +1,14 @@
+- type: gameMap
+  id: carina_Voidcrew
+  mapName: SolGov Carina-Class Cutter
+  mapPath: /Maps/_Voidcrew/carina.yml
+  minPlayers: 0
+  stations:
+    carina_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: SolGov Carina-Class Cutter
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

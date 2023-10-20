@@ -1,0 +1,14 @@
+- type: gameMap
+  id: tranq_Voidcrew
+  mapName: Tranquility-class Flying Apartment Complex
+  mapPath: /Maps/_Voidcrew/tranq.yml
+  minPlayers: 0
+  stations:
+    tranq_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Tranquility-class Flying Apartment Complex
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

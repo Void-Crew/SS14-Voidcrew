@@ -1,0 +1,14 @@
+- type: gameMap
+  id: merlin_Voidcrew
+  mapName: Merlin-class Power Projector
+  mapPath: /Maps/_Voidcrew/merlin.yml
+  minPlayers: 0
+  stations:
+    merlin_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Merlin-class Power Projector
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

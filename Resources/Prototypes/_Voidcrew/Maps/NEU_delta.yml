@@ -1,0 +1,14 @@
+- type: gameMap
+  id: delta_Voidcrew
+  mapName: Delta-class Frigate
+  mapPath: /Maps/_Voidcrew/delta.yml
+  minPlayers: 0
+  stations:
+    delta_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Delta-class Frigate
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

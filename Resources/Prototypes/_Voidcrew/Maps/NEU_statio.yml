@@ -1,0 +1,14 @@
+- type: gameMap
+  id: statio_Voidcrew
+  mapName: Statio.3-class Station With Thrusters
+  mapPath: /Maps/_Voidcrew/statio.yml
+  minPlayers: 0
+  stations:
+    statio_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Statio.3-class Station With Thrusters
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

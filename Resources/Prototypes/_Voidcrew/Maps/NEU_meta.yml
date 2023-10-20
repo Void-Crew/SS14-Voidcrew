@@ -1,0 +1,14 @@
+- type: gameMap
+  id: meta_Voidcrew
+  mapName: Meta-class Freighter
+  mapPath: /Maps/_Voidcrew/meta.yml
+  minPlayers: 0
+  stations:
+    meta_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Meta-class Freighter
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

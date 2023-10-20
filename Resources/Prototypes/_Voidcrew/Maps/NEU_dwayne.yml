@@ -1,0 +1,14 @@
+- type: gameMap
+  id: dwayne_Voidcrew
+  mapName: Dwayne-class Long Range Mining Transport
+  mapPath: /Maps/_Voidcrew/dwayne.yml
+  minPlayers: 0
+  stations:
+    dwayne_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Dwayne-class Long Range Mining Transport
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

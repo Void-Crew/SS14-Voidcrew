@@ -1,0 +1,14 @@
+- type: gameMap
+  id: Nanopill_Voidcrew
+  mapName: Nanopill class Trasport Pill
+  mapPath: /Maps/_Voidcrew/Nanopill.yml
+  minPlayers: 0
+  stations:
+    Nanopill_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Nanopill class Trasport Pill
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

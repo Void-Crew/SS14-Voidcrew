@@ -1,0 +1,14 @@
+- type: gameMap
+  id: hightide_Voidcrew
+  mapName: HighTide-Class Entrepreneur Ship
+  mapPath: /Maps/_Voidcrew/hightide.yml
+  minPlayers: 0
+  stations:
+    hightide_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: HighTide-Class Entrepreneur Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

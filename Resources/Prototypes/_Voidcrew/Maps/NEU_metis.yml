@@ -1,0 +1,14 @@
+- type: gameMap
+  id: metis_Voidcrew
+  mapName: Metis-class Experimental Extrasolar Pathfinder
+  mapPath: /Maps/_Voidcrew/metis.yml
+  minPlayers: 0
+  stations:
+    metis_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Metis-class Experimental Extrasolar Pathfinder
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

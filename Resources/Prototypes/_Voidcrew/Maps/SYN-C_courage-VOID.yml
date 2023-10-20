@@ -1,0 +1,14 @@
+- type: gameMap
+  id: courage_Voidcrew
+  mapName: Courage-class Strike Dropship
+  mapPath: /Maps/_Voidcrew/courage.yml
+  minPlayers: 0
+  stations:
+    courage_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Courage-class Strike Dropship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

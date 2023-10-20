@@ -1,0 +1,14 @@
+- type: gameMap
+  id: kilo_Voidcrew
+  mapName: Kilo-class Mining Ship
+  mapPath: /Maps/_Voidcrew/kilo.yml
+  minPlayers: 0
+  stations:
+    kilo_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Kilo-class Mining Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

@@ -1,0 +1,14 @@
+- type: gameMap
+  id: NEU_prometheus_Voidcrew
+  mapName: Prometheus-Class Plasma Tanker
+  mapPath: /Maps/_Voidcrew/NEU_prometheus.yml
+  minPlayers: 0
+  stations:
+    NEU_prometheus_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Prometheus-Class Plasma Tanker
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

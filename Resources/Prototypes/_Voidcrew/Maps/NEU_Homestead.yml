@@ -1,0 +1,14 @@
+- type: gameMap
+  id: homestead_Voidcrew
+  mapName: Homestead-class Destiny Manifestation Craft
+  mapPath: /Maps/_Voidcrew/homestead.yml
+  minPlayers: 0
+  stations:
+    homestead_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Homestead-class Destiny Manifestation Craft
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

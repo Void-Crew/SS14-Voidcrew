@@ -1,0 +1,14 @@
+- type: gameMap
+  id: solar_Voidcrew
+  mapName: Solar-class Research Vessel
+  mapPath: /Maps/_Voidcrew/solar.yml
+  minPlayers: 0
+  stations:
+    solar_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Solar-class Research Vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

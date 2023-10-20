@@ -1,0 +1,14 @@
+- type: gameMap
+  id: blackbeard_Voidcrew
+  mapName: Blackbeard-class Heavy Boarder
+  mapPath: /Maps/_Voidcrew/blackbeard.yml
+  minPlayers: 0
+  stations:
+    blackbeard_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Blackbeard-class Heavy Boarder
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

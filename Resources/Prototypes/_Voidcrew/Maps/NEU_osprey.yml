@@ -1,0 +1,14 @@
+- type: gameMap
+  id: osprey_Voidcrew
+  mapName: Osprey-class Exploration Ship
+  mapPath: /Maps/_Voidcrew/osprey.yml
+  minPlayers: 0
+  stations:
+    osprey_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Osprey-class Exploration Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

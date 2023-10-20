@@ -1,0 +1,14 @@
+- type: gameMap
+  id: minutemen_carina_Voidcrew
+  mapName: Carina-M-Class Patrol Cutter
+  mapPath: /Maps/_Voidcrew/minutemen_carina.yml
+  minPlayers: 0
+  stations:
+    minutemen_carina_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Carina-M-Class Patrol Cutter
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

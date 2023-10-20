@@ -1,0 +1,14 @@
+- type: gameMap
+  id: nooper_Voidcrew
+  mapName: Nooper-Class Idiot Quarantine
+  mapPath: /Maps/_Voidcrew/nooper.yml
+  minPlayers: 0
+  stations:
+    nooper_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Nooper-Class Idiot Quarantine
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

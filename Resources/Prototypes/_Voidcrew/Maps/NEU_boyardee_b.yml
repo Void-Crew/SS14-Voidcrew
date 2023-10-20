@@ -1,0 +1,14 @@
+- type: gameMap
+  id: boyardee_b_Voidcrew
+  mapName: Boyardee-class Type B Entertainment Vessel
+  mapPath: /Maps/_Voidcrew/boyardee_b.yml
+  minPlayers: 0
+  stations:
+    boyardee_b_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Boyardee-class Type B Entertainment Vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

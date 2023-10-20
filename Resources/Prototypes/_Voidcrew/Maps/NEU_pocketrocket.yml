@@ -1,0 +1,14 @@
+- type: gameMap
+  id: pocketrocket_Voidcrew
+  mapName: pocketrocket-class general purpose ship
+  mapPath: /Maps/_Voidcrew/pocketrocket.yml
+  minPlayers: 0
+  stations:
+    pocketrocket_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: pocketrocket-class general purpose ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

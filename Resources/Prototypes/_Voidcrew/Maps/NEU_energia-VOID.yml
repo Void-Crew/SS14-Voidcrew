@@ -1,0 +1,14 @@
+- type: gameMap
+  id: energia_Voidcrew
+  mapName: Energia-class Experimental Vessel
+  mapPath: /Maps/_Voidcrew/energia.yml
+  minPlayers: 0
+  stations:
+    energia_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Energia-class Experimental Vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

@@ -1,0 +1,20 @@
+- type: gameMap
+  id: Striker
+  mapName: 'Striker Test Ship'
+  mapPath: /Maps/_Voidcrew/striker.yml
+  minPlayers: 0
+  stations:
+    Striker:
+      stationProto: VoidcrewShip
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: '{0} Striker {1}'
+          nameGenerator:
+            !type:VoidcrewShipNameGenerator
+            prefixCreator: ''
+        - type: StationJobs
+          overflowJobs:
+            - Captain
+          availableJobs:
+            Captain: [ -1, -1 ]
+            SalvageSpecialist: [ 3, 3 ]

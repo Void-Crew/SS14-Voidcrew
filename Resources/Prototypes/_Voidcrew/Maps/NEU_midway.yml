@@ -1,0 +1,14 @@
+- type: gameMap
+  id: midway_Voidcrew
+  mapName: Midway-class Atmospherics Mining vessel
+  mapPath: /Maps/_Voidcrew/midway.yml
+  minPlayers: 0
+  stations:
+    midway_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Midway-class Atmospherics Mining vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

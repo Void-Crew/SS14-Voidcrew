@@ -1,0 +1,14 @@
+- type: gameMap
+  id: libertatia_Voidcrew
+  mapName: Libertatia-class Hauler
+  mapPath: /Maps/_Voidcrew/libertatia.yml
+  minPlayers: 0
+  stations:
+    libertatia_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Libertatia-class Hauler
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

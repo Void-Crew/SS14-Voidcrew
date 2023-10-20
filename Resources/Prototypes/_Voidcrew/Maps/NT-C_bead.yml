@@ -1,0 +1,14 @@
+- type: gameMap
+  id: bead_Voidcrew
+  mapName: Bead-class Corporate Frigate
+  mapPath: /Maps/_Voidcrew/bead.yml
+  minPlayers: 0
+  stations:
+    bead_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Bead-class Corporate Frigate
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

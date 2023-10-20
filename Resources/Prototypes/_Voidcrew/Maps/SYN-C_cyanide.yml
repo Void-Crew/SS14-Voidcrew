@@ -1,0 +1,14 @@
+- type: gameMap
+  id: cyanide_Voidcrew
+  mapName: Cyanide-class Interceptor
+  mapPath: /Maps/_Voidcrew/cyanide.yml
+  minPlayers: 0
+  stations:
+    cyanide_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Cyanide-class Interceptor
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

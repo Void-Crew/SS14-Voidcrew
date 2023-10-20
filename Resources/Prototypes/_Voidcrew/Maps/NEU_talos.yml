@@ -1,0 +1,14 @@
+- type: gameMap
+  id: talos_Voidcrew
+  mapName: Talos-class Salvage Cruiser
+  mapPath: /Maps/_Voidcrew/talos.yml
+  minPlayers: 0
+  stations:
+    talos_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Talos-class Salvage Cruiser
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

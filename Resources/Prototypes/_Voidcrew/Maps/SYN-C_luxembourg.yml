@@ -1,0 +1,14 @@
+- type: gameMap
+  id: luxembourg_Voidcrew
+  mapName: Luxembourg-class Delivery Vessel
+  mapPath: /Maps/_Voidcrew/luxembourg.yml
+  minPlayers: 0
+  stations:
+    luxembourg_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Luxembourg-class Delivery Vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

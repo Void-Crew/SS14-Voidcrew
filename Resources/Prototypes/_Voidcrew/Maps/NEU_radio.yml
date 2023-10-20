@@ -1,0 +1,14 @@
+- type: gameMap
+  id: radio_Voidcrew
+  mapName: Radio Broadcasting Ship
+  mapPath: /Maps/_Voidcrew/radio.yml
+  minPlayers: 0
+  stations:
+    radio_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Radio Broadcasting Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

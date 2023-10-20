@@ -1,0 +1,14 @@
+- type: gameMap
+  id: sugarcube_Voidcrew
+  mapName: Sugarcube-Class Prison Bus Ship
+  mapPath: /Maps/_Voidcrew/sugarcube.yml
+  minPlayers: 0
+  stations:
+    sugarcube_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Sugarcube-Class Prison Bus Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

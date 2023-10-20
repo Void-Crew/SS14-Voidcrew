@@ -1,0 +1,14 @@
+- type: gameMap
+  id: riggs_Voidcrew
+  mapName: Riggs-class Sloop
+  mapPath: /Maps/_Voidcrew/riggs.yml
+  minPlayers: 0
+  stations:
+    riggs_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Riggs-class Sloop
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

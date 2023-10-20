@@ -1,0 +1,14 @@
+- type: gameMap
+  id: indisputable_Voidcrew
+  mapName: Indisputable-class Secure Transport
+  mapPath: /Maps/_Voidcrew/indisputable.yml
+  minPlayers: 0
+  stations:
+    indisputable_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Indisputable-class Secure Transport
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

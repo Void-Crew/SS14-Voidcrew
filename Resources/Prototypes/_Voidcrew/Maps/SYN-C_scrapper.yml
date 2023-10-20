@@ -1,0 +1,14 @@
+- type: gameMap
+  id: scrapper_Voidcrew
+  mapName: Scrapper-Class Salvage Cruiser
+  mapPath: /Maps/_Voidcrew/scrapper.yml
+  minPlayers: 0
+  stations:
+    scrapper_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Scrapper-Class Salvage Cruiser
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

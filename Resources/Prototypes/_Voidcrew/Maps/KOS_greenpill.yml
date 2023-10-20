@@ -1,0 +1,14 @@
+- type: gameMap
+  id: greenpill_Voidcrew
+  mapName: Greenpill-class Scrying Ship
+  mapPath: /Maps/_Voidcrew/greenpill.yml
+  minPlayers: 0
+  stations:
+    greenpill_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Greenpill-class Scrying Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

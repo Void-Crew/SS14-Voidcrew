@@ -1,0 +1,14 @@
+- type: gameMap
+  id: trambullet_Voidcrew
+  mapName: Trambullet-class engineering failure
+  mapPath: /Maps/_Voidcrew/trambullet.yml
+  minPlayers: 0
+  stations:
+    trambullet_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Trambullet-class engineering failure
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

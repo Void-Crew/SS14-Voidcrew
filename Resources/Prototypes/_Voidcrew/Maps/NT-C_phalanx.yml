@@ -1,0 +1,14 @@
+- type: gameMap
+  id: phalanx_Voidcrew
+  mapName: Phalanx-Class Super Battlecruiser
+  mapPath: /Maps/_Voidcrew/phalanx.yml
+  minPlayers: 0
+  stations:
+    phalanx_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Phalanx-Class Super Battlecruiser
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

@@ -1,0 +1,14 @@
+- type: gameMap
+  id: crescent_Voidcrew
+  mapName: Crescent-class Freighter
+  mapPath: /Maps/_Voidcrew/crescent.yml
+  minPlayers: 0
+  stations:
+    crescent_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Crescent-class Freighter
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

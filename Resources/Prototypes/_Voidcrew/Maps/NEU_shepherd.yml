@@ -1,0 +1,14 @@
+- type: gameMap
+  id: shepherd_Voidcrew
+  mapName: Shepherd-Class Space Monastery
+  mapPath: /Maps/_Voidcrew/shepherd.yml
+  minPlayers: 0
+  stations:
+    shepherd_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Shepherd-Class Space Monastery
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

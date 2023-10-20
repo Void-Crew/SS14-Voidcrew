@@ -1,0 +1,14 @@
+- type: gameMap
+  id: pubby_Voidcrew
+  mapName: Pubby-class Light Carrier
+  mapPath: /Maps/_Voidcrew/pubby.yml
+  minPlayers: 0
+  stations:
+    pubby_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Pubby-class Light Carrier
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

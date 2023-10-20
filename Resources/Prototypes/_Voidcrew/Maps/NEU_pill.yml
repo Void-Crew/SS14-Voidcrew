@@ -1,0 +1,14 @@
+- type: gameMap
+  id: pill_Voidcrew
+  mapName: Pill-class Torture Device
+  mapPath: /Maps/_Voidcrew/pill.yml
+  minPlayers: 0
+  stations:
+    pill_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Pill-class Torture Device
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

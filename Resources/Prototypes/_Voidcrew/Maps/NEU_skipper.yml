@@ -1,0 +1,14 @@
+- type: gameMap
+  id: skipper_Voidcrew
+  mapName: Skipper-class Heavy Cruiser
+  mapPath: /Maps/_Voidcrew/skipper.yml
+  minPlayers: 0
+  stations:
+    skipper_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Skipper-class Heavy Cruiser
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

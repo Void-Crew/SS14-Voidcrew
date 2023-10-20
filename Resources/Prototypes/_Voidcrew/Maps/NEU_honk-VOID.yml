@@ -1,0 +1,14 @@
+- type: gameMap
+  id: honk_Voidcrew
+  mapName: Honk-class Boe Nah Nah
+  mapPath: /Maps/_Voidcrew/honk.yml
+  minPlayers: 0
+  stations:
+    honk_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Honk-class Boe Nah Nah
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

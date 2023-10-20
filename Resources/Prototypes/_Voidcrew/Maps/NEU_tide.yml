@@ -1,0 +1,14 @@
+- type: gameMap
+  id: tide_Voidcrew
+  mapName: Tide-class Salvage Ship
+  mapPath: /Maps/_Voidcrew/tide.yml
+  minPlayers: 0
+  stations:
+    tide_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Tide-class Salvage Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

@@ -1,0 +1,14 @@
+- type: gameMap
+  id: Roguemalf_Voidcrew
+  mapName: Malfunction-class Silicon Ship
+  mapPath: /Maps/_Voidcrew/Roguemalf.yml
+  minPlayers: 0
+  stations:
+    Roguemalf_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Malfunction-class Silicon Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

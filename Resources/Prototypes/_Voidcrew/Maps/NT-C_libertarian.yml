@@ -1,0 +1,14 @@
+- type: gameMap
+  id: libertarian_Voidcrew
+  mapName: Libertarian-class Scout Vessel
+  mapPath: /Maps/_Voidcrew/libertarian.yml
+  minPlayers: 0
+  stations:
+    libertarian_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Libertarian-class Scout Vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

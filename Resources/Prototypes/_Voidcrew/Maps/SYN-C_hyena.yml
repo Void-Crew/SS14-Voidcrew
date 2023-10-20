@@ -1,0 +1,14 @@
+- type: gameMap
+  id: hyena_Voidcrew
+  mapName: Hyena-class Wrecking Tug
+  mapPath: /Maps/_Voidcrew/hyena.yml
+  minPlayers: 0
+  stations:
+    hyena_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Hyena-class Wrecking Tug
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

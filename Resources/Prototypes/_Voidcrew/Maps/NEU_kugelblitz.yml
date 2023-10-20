@@ -1,0 +1,14 @@
+- type: gameMap
+  id: kugelblitz_Voidcrew
+  mapName: Kugelblitz-class Experimental Vessel
+  mapPath: /Maps/_Voidcrew/kugelblitz.yml
+  minPlayers: 0
+  stations:
+    kugelblitz_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Kugelblitz-class Experimental Vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

@@ -1,0 +1,14 @@
+- type: gameMap
+  id: shetland_Voidcrew
+  mapName: Shetland-class Multipurpose Frigate
+  mapPath: /Maps/_Voidcrew/shetland.yml
+  minPlayers: 0
+  stations:
+    shetland_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Shetland-class Multipurpose Frigate
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

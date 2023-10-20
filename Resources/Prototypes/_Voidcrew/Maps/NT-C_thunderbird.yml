@@ -1,0 +1,14 @@
+- type: gameMap
+  id: thunderbird_Voidcrew
+  mapName: Thunderbird-class Emergency military vessel
+  mapPath: /Maps/_Voidcrew/thunderbird.yml
+  minPlayers: 0
+  stations:
+    thunderbird_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Thunderbird-class Emergency military vessel
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

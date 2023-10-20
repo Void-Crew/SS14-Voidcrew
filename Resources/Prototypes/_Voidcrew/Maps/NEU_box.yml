@@ -1,0 +1,14 @@
+- type: gameMap
+  id: box_Voidcrew
+  mapName: Box-class Hospital Ship
+  mapPath: /Maps/_Voidcrew/box.yml
+  minPlayers: 0
+  stations:
+    box_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Box-class Hospital Ship
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]

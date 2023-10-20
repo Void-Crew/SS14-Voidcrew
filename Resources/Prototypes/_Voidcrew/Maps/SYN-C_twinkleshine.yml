@@ -1,0 +1,14 @@
+- type: gameMap
+  id: twinkleshine_Voidcrew
+  mapName: Twinkleshine-class Battle Cruiser
+  mapPath: /Maps/_Voidcrew/twinkleshine.yml
+  minPlayers: 0
+  stations:
+    twinkleshine_Voidcrew:
+      stationProto: VoidcrewShip
+      components:
+      - type: StationNameSetup
+        mapNameTemplate: Twinkleshine-class Battle Cruiser
+      - type: StationJobs
+        availableJobs:
+          Captain: [1, -1]
