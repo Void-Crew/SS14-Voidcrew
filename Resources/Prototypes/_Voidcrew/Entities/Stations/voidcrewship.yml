@@ -1,0 +1,9 @@
+- type: entity
+  id: VoidcrewShip
+  parent:
+    - BaseStation
+    - BaseStationJobsSpawning
+    - BaseStationRecords
+  noSpawn: true
+  components:
+    - type: Transform

@@ -1,0 +1,19 @@
+- type: ftlPoint
+  id: PlanetPoint
+  tag: ship-ftl-tag-planet
+  effects:
+    - !type:ToPlanetEffect
+      biomeTemplates:
+        - Grasslands
+        - Lava
+        - Snow
+        - LowDesert
+        - Caves
+    - !type:SpawnDungeonEffect
+      range: 75
+
+- type: weightedRandom
+  id: FTLPoints
+  weights:
+    PlanetPoint: 1
+
