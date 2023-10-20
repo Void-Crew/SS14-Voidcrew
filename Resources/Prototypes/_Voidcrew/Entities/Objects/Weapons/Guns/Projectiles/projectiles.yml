@@ -1,0 +1,36 @@
+﻿- type: entity
+  id: BulletPlasma
+  name: plasma blast
+  parent: BaseBullet
+  noSpawn: true
+  components:
+    - type: Reflective
+      reflective:
+        - NonEnergy
+    - type: Sprite
+      noRot: false
+      sprite: _Voidcrew/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+      layers:
+        - state: plasmacutter
+          shader: unshaded
+    - type: GatheringProjectile
+      amount: 7
+    - type: Projectile
+      impactEffect: BulletImpactEffectPlasma
+      deleteOnCollide: False
+      damage:
+        types:
+          Blunt: 5
+    # Short lifespan
+    - type: TimedDespawn
+      lifetime: 2
+
+- type: entity
+  id: BulletPlasmaAdv
+  name: plasma blast
+  parent: BulletPlasma
+  noSpawn: true
+  components:
+    - type: GatheringProjectile
+      amount: 10
+

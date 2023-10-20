@@ -84,6 +84,20 @@
         seed: 0
         noiseType: Cellular
         frequency: 0.1
+    # Fauna spawn
+    - !type:BiomeEntityLayer
+      threshold: 0.97
+      anchored: false
+      noise:
+        seed: 0
+        frequency: 4
+        noiseType: OpenSimplex2
+      allowedTiles:
+        - FloorLowDesert
+      entities:
+        - MobGiantSpiderAngry
+        - MobCrab
+        - MobSnake
 
 # Grass
 - type: biomeTemplate
@@ -232,6 +246,29 @@
         gain: 1
         cellularDistanceFunction: Euclidean
         cellularReturnType: Distance2
+    # Fauna spawn
+    - !type:BiomeEntityLayer
+      threshold: 0.97
+      anchored: false
+      noise:
+        seed: 0
+        frequency: 4
+        noiseType: OpenSimplex2
+      allowedTiles:
+        - FloorPlanetGrass
+      entities:
+        - MobCow
+        - MobDuckMallard
+        - MobBee
+        - MobButterfly
+        - MobGoose
+        - MobGorilla
+        - MobMonkey
+        - MobFrog
+        - MobParrot
+        - MobPig
+        - MobWildlifeBear
+        - MobChicken
 
 # Lava
 - type: biomeTemplate
@@ -332,6 +369,18 @@
       variants:
         - 0
       tile: FloorBasalt
+    # Fauna spawn
+    - !type:BiomeEntityLayer
+      threshold: 0.97
+      anchored: false
+      noise:
+        seed: 0
+        frequency: 4
+        noiseType: OpenSimplex2
+      allowedTiles:
+        - FloorBasalt
+      entities:
+        - MobXenoRouny
 
 # Snow
 - type: biomeTemplate
@@ -479,6 +528,20 @@
         octaves: 1
       entities:
       - FloorLiquidPlasmaEntity
+    # Fauna spawn
+    - !type:BiomeEntityLayer
+      threshold: 0.97
+      anchored: false
+      noise:
+        seed: 0
+        frequency: 4
+        noiseType: OpenSimplex2
+      allowedTiles:
+        - FloorSnow
+      entities:
+        - MobWildlifeWolf
+        - MobWildlifeBear
+        - MobPenguin
 
 # Caves
 - type: biomeTemplate
@@ -517,3 +580,18 @@
     - !type:BiomeTileLayer
       threshold: -1.0
       tile: FloorAsteroidSand
+    # Fauna spawn
+    - !type:BiomeEntityLayer
+      threshold: 0.97
+      anchored: false
+      noise:
+        seed: 0
+        frequency: 4
+        noiseType: OpenSimplex2
+      allowedTiles:
+        - FloorAsteroidSand
+      entities:
+        - MobWildlifeWolf
+        - MobWildlifeBear
+        - MobXenoRouny
+        - MobGiantSpiderAngry

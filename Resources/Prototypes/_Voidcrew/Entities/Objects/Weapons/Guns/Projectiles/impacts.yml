@@ -1,0 +1,17 @@
+﻿- type: entity
+  id: BulletImpactEffectPlasma
+  noSpawn: true
+  components:
+    - type: TimedDespawn
+      lifetime: 0.2
+    - type: Sprite
+      drawdepth: Effects
+      layers:
+        - shader: unshaded
+          map: ["enum.EffectLayers.Unshaded"]
+          sprite: _Voidcrew/Objects/Weapons/Guns/Projectiles/projectiles.rsi
+          state: impact_laser_purple
+    - type: EffectVisuals
+    - type: Tag
+      tags:
+        - HideContextMenu
