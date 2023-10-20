@@ -180,11 +180,12 @@ public abstract class SharedBiomeSystem : EntitySystem
     /// Tries to get the relevant entity for this tile.
     /// </summary>
     protected bool TryGetEntity(Vector2i indices, List<IBiomeLayer> layers, FastNoiseLite noise, MapGridComponent grid,
-        [NotNullWhen(true)] out string? entity)
+        [NotNullWhen(true)] out string? entity, out bool anchored)
     {
         if (!TryGetBiomeTile(indices, layers, noise, grid, out var tileRef))
         {
             entity = null;
+            anchored = false;
             return false;
         }
 
@@ -221,9 +222,10 @@ public abstract class SharedBiomeSystem : EntitySystem
 
             if (layer is BiomeMetaLayer meta)
             {
-                if (TryGetEntity(indices, ProtoManager.Index<BiomeTemplatePrototype>(meta.Template).Layers, noise, grid, out entity))
+                if (TryGetEntity(indices, ProtoManager.Index<BiomeTemplatePrototype>(meta.Template).Layers, noise, grid, out entity, out var entAnchored))
                 {
                     noise.SetSeed(oldSeed);
+                    anchored = entAnchored;
                     return true;
                 }
 
@@ -233,6 +235,7 @@ public abstract class SharedBiomeSystem : EntitySystem
             if (layer is not BiomeEntityLayer biomeLayer)
             {
                 entity = null;
+                anchored = false;
                 noise.SetSeed(oldSeed);
                 return false;
             }
@@ -240,11 +243,13 @@ public abstract class SharedBiomeSystem : EntitySystem
             var noiseValue = noise.GetNoise(indices.X, indices.Y, i);
             entity = Pick(biomeLayer.Entities, (noiseValue + 1f) / 2f);
             noise.SetSeed(oldSeed);
+            anchored = biomeLayer.AnchorEntities;
             return true;
         }
 
         noise.SetSeed(oldSeed);
         entity = null;
+        anchored = false;
         return false;
     }
 
