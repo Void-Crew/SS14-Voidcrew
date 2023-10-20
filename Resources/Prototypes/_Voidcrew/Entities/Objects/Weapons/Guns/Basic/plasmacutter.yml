@@ -1,0 +1,68 @@
+﻿- type: entity
+  id: WeaponPlasmaCutterBase
+  abstract: true
+  parent: BaseItem
+  components:
+    - type: Sprite
+      sprite: _Voidcrew/Objects/Weapons/Guns/Basic/plasmacutter.rsi
+    - type: Item
+      sprite: _Voidcrew/Objects/Weapons/Guns/Basic/plasmacutter.rsi
+      heldPrefix: plasmacutter
+      size: 30
+    - type: Gun
+      fireRate: 0.75
+      selectedMode: SemiAuto
+      availableModes:
+        - SemiAuto
+      soundGunshot:
+        path: /Audio/Weapons/plasma_cutter.ogg
+    - type: AmmoCounter
+    - type: Appearance
+    - type: GenericVisualizer
+      visuals:
+        enum.AmmoVisuals.HasAmmo:
+          overlay:
+            True: { visible: False }
+            False: { visible: True }
+    - type: RechargeBasicEntityAmmo
+      rechargeCooldown: 0.75
+    - type: BasicEntityAmmoProvider
+      proto: BulletPlasma
+      capacity: 1
+      count: 1
+    - type: Clothing
+      quickEquip: false
+      slots:
+        - suitStorage
+        - Belt
+
+
+- type: entity
+  name: plasma cutter
+  id: WeaponPlasmaCutter
+  parent: WeaponPlasmaCutterBase
+  description: A mining tool capable of expelling concentrated plasma bursts
+  components:
+    - type: Sprite
+      sprite: _Voidcrew/Objects/Weapons/Guns/Basic/plasmacutter.rsi
+      layers:
+        - state: plasmacutter
+    - type: Item
+      sprite: _Voidcrew/Objects/Weapons/Guns/Basic/plasmacutter.rsi
+      heldPrefix: plasmacutter
+
+- type: entity
+  name: advanced plasma cutter
+  id: WeaponAdvancedPlasmaCutter
+  parent: WeaponPlasmaCutterBase
+  description: A mining tool capable of expelling concentrated plasma bursts
+  components:
+    - type: Sprite
+      sprite: _Voidcrew/Objects/Weapons/Guns/Basic/plasmacutter.rsi
+      layers:
+        - state: adv_plasmacutter
+    - type: Item
+      sprite: _Voidcrew/Objects/Weapons/Guns/Basic/plasmacutter.rsi
+      heldPrefix: adv_plasmacutter
+    - type: BasicEntityAmmoProvider
+      proto: BulletPlasmaAdv

@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Taken from tgstation at https://github.com/tgstation/tgstation/commit/7fbbe066b27e6e95423640c499a5875f8a7b7d95",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "plasmacutter"
+    },
+    {
+      "name": "plasmacutter-inhand-right",
+	  "directions": 4
+    },
+    {
+      "name": "plasmacutter-inhand-left",
+	  "directions": 4
+    },
+    {
+      "name": "adv_plasmacutter"
+    },
+    {
+      "name": "adv_plasmacutter-inhand-right",
+	  "directions": 4
+    },
+    {
+      "name": "adv_plasmacutter-inhand-left",
+	  "directions": 4
+    }
+  ]
+}
