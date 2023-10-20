@@ -25,6 +25,8 @@ namespace Content.Client.GameTicking.Managers
         private Dictionary<NetEntity, Dictionary<string, uint?>>  _jobsAvailable = new();
         private Dictionary<NetEntity, string> _stationNames = new();
 
+        private Dictionary<string, string> _shipList = new();
+
         /// <summary>
         /// The current round-end window. Could be used to support re-opening the window after closing it.
         /// </summary>
@@ -44,6 +46,7 @@ namespace Content.Client.GameTicking.Managers
         [ViewVariables] public IReadOnlyDictionary<NetEntity, Dictionary<string, uint?>> JobsAvailable => _jobsAvailable;
         [ViewVariables] public IReadOnlyDictionary<NetEntity, string> StationNames => _stationNames;
 
+        [ViewVariables] public IReadOnlyDictionary<string, string> ShipList => _shipList;
         public event Action? InfoBlobUpdated;
         public event Action? LobbyStatusUpdated;
         public event Action? LobbySongUpdated;
@@ -68,6 +71,8 @@ namespace Content.Client.GameTicking.Managers
             SubscribeNetworkEvent<TickerJobsAvailableEvent>(UpdateJobsAvailable);
             SubscribeNetworkEvent<RoundRestartCleanupEvent>(RoundRestartCleanup);
 
+            SubscribeNetworkEvent<TickerShipListEvent>(UpdateShipList);
+
             _initialized = true;
         }
 
@@ -85,6 +90,11 @@ namespace Content.Client.GameTicking.Managers
         {
             DisallowedLateJoin = message.Disallowed;
             LobbyLateJoinStatusUpdated?.Invoke();
+        }
+
+        private void UpdateShipList(TickerShipListEvent message)
+        {
+            _shipList = message.ShipList;
         }
 
         private void UpdateJobsAvailable(TickerJobsAvailableEvent message)

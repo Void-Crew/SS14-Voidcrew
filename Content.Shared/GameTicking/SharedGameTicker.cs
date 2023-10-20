@@ -135,6 +135,17 @@ namespace Content.Shared.GameTicking
     }
 
     [Serializable, NetSerializable]
+    public sealed class TickerShipListEvent : EntityEventArgs
+    {
+        public Dictionary<string, string> ShipList { get; }
+
+        public TickerShipListEvent(Dictionary<string, string> shipList)
+        {
+            ShipList = shipList;
+        }
+    }
+
+    [Serializable, NetSerializable]
     public sealed class RoundEndMessageEvent : EntityEventArgs
     {
         [Serializable, NetSerializable]

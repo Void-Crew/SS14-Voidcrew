@@ -1,6 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Server.GameTicking;
+using Content.Server.Maps;
 using Content.Server.Station.Components;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
@@ -38,6 +39,16 @@ public sealed partial class StationJobsSystem : EntitySystem
 
     public override void Update(float _)
     {
+        var ships = new Dictionary<string, string>();
+        foreach (var gameMap in _prototypeManager.EnumeratePrototypes<GameMapPrototype>())
+        {
+            if (gameMap.Stations.First().Value.StationPrototype == "VoidcrewShip")
+            {
+                ships.Add(gameMap.MapName, gameMap.ID);
+            }
+        }
+        RaiseNetworkEvent(new TickerShipListEvent(ships) , Filter.Empty().AddPlayers(_playerManager.ServerSessions));
+
         if (_availableJobsDirty)
         {
             _cachedAvailableJobs = GenerateJobsAvailableEvent();

@@ -3,6 +3,7 @@ using Content.Client.CrewManifest;
 using Content.Client.GameTicking.Managers;
 using Content.Client.UserInterface.Controls;
 using Content.Client.Players.PlayTimeTracking;
+using Content.Client.ShipSpawn;
 using Content.Shared.CCVar;
 using Content.Shared.Roles;
 using Content.Shared.StatusIcon;
@@ -80,7 +81,13 @@ namespace Content.Client.LateJoin
 
             if (!_gameTicker.DisallowedLateJoin && _gameTicker.StationNames.Count == 0)
                 Logger.Warning("No stations exist, nothing to display in late-join GUI");
+            var shipSpawnButton = new Button()
+            {
+                Text = Loc.GetString("ship-spawn-button-label")
+            };
 
+            shipSpawnButton.OnPressed += _ => new ShipSpawnGui().OpenCentered();
+            _base.AddChild(shipSpawnButton);
             foreach (var (id, name) in _gameTicker.StationNames)
             {
                 var jobList = new BoxContainer
