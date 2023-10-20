@@ -132,6 +132,10 @@
       - CellRechargerCircuitboard
       - BorgChargerCircuitboard
       - WeaponCapacitorRechargerCircuitboard
+      - ResearchAndDevelopmentServerMachineCircuitboard
+      - ResearchComputerCircuitboard
+      - ProtolatheMachineCircuitboard
+      - CircuitImprinterMachineCircuitboard
   - type: EmagLatheRecipes
     emagStaticRecipes:
        - CartridgePistol
